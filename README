@@ -12,7 +12,9 @@ To install this module type the following:
 
 DEPENDENCIES
 
-Nothing.
+This module requires these other modules and libraries:
+
+  Compress::Zlib
 
 COPYRIGHT AND LICENCE
 
