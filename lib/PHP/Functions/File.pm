@@ -12,7 +12,7 @@ package PHP::Functions::File;
 	require Exporter;
 	@ISA = qw(Exporter);
 	@EXPORT_OK = qw(file_get_contents file_put_contents);
-	$VERSION = '0.02';
+	$VERSION = '0.04';
 
 	use Carp qw(carp croak);
 
@@ -230,13 +230,13 @@ PHP::Functions::File - Transplant of file_get_contents/file_put_contentsl functi
 
 	use PHP::Functions::File qw(file_get_contents file_put_contents);
 
-	$data = file_get_contents("http://www.google.com/");
+	$data = file_get_contents("http://www.example.com/");
 
-	file_put_contents("file://test.txt.org", $data);
+	file_put_contents("test.org.txt", $data);
 	file_put_contents("zlib://test.txt.gz", $data);
 
 	$data = file_get_contents("zlib://test.txt.gz");
-	file_put_contents("test.txt", $d);
+	file_put_contents("file://test.txt", $data);
 
 =head1 DESCRIPTION
 
@@ -250,7 +250,7 @@ L<http://www.php.net/manual/en/function.file-put-contents.php>
 
 =head1 To Do
 
-- multiprotocol support. (Currently only http/file protocols are supported.)
+- multiprotocol support. (Currently only http,file and zlib protocols are supported.)
 - context support.
 
 =head1 AUTHOR
