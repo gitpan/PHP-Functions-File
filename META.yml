@@ -6,6 +6,11 @@ version_from: lib/PHP/Functions/File.pm
 installdirs:  site
 requires:
     Compress::Zlib                 0
+    Compress::Zlib                 0
+    LWP::UserAgent                 0
+    File::Spec                     0
+    HTTP::Request                  0
+    HTTP::Response                 0
 
 distribution_type: module
 generated_by: ExtUtils::MakeMaker version 6.17

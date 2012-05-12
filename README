@@ -15,6 +15,10 @@ DEPENDENCIES
 This module requires these other modules and libraries:
 
   Compress::Zlib
+  LWP::UserAgent
+  File::Spec
+  HTTP::Request
+  HTTP::Response
 
 COPYRIGHT AND LICENCE
 
